@@ -1,0 +1,43 @@
+= Library for SASS/CSS
+
+Includes:
+
+* CSS Layout Reset
+* Layout Helpers
+* Style Snippets
+
+== Install
+
+Install as git submodule for Rails application with SASS:
+  git submodule add git@github.com:vladalive/sass-lib.git public/stylesheets/sass/sass-lib
+
+Include at the top of your SASS file:
+  @import sass-lib/lib.sass
+  +Layout_Reset
+  +Layout_Helpers
+
+== Update
+  git submodule update
+
+== Usage
+
+=== CSS Layout Reset
+  +Layout_Reset
+  
+=== Layout Helpers
+  +Layout_Helpers
+  .Clear - Clear fix
+  tag.Hidden - Visibility: hidden
+  tag.Visible - Visibility: visible
+
+=== Style Snippets
+
+Round borders
+  +round-borders("5px")
+  +round-borders("0 10px 10px 0")
+
+Box Shadow
+  +box-shadow("#000 1px 1px 5px")
+
+= Copyright
+Copyright (c) 2009 Vlad Alive (http://vladalive.com), released under the MIT license
