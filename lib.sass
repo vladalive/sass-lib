@@ -1,0 +1,70 @@
+=Layout_Reset
+  html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, cite, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input, textarea, select, button, table, caption, tbody, tfoot, thead, tr, th, td, hr, article, aside, dialog, figure, footer, header, hgroup, nav, section
+    margin: 0
+    padding: 0
+    border: 0 none
+    outline: 0 none
+    background: none
+    font-family: inherit
+    font-size: 100%
+    font-weight: inherit
+    font-style: inherit
+    font-variant: normal
+    vertical-align: baseline
+  article, aside, dialog, figure, footer, header, hgroup, nav, section
+    display: block
+  table
+    border-collapse: separate
+    border-spacing: 0
+  caption, th, td
+    text-align: left
+    font-weight: normal
+  table, td, th
+    vertical-align: middle
+  ol, ul, li
+    list-style: none
+  blockquote, q
+    &:before, &:after
+      content: ''
+    quotes: none
+  i, em
+    font-style: italic
+  b, strong
+    font-weight: bold
+  sup
+    vertical-align: text-top
+  sub
+    vertical-align: text-bottom
+  a, label, button
+    cursor: pointer
+  acronym, abbr
+    cursor: help
+  a, label, button, input, textarea, select
+    &:focus, &:active
+      outline: 0 none
+
+
+=Layout_Helpers
+  div.Clear
+    display: block !important
+    clear: both !important
+    float: none !important
+    width: 100% !important
+    height: 1px !important
+    margin: 0 0 -1px 0 !important
+    font-size: 0px !important
+  .Hidden
+    visibility: hidden !important
+  .Visible
+    visibility: visible !important
+
+=round-borders(!args)
+  -moz-border-radius = !args
+  -khtml-border-radius = !args
+  -webkit-border-radius = !args
+  border-radius = !args
+
+=box-shadow(!args)
+  -moz-box-shadow = !args
+  -webkit-box-shadow = !args
+  box-shadow = !args
