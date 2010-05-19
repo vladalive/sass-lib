@@ -13,8 +13,8 @@ Install as git submodule for Rails application with SASS:
 
 Include at the top of your SASS file:
   @import sass-lib/lib.sass
-  +Layout_Reset
-  +Layout_Helpers
+  @include Layout_Reset
+  @include Layout_Helpers
 
 == Update
   git submodule update
@@ -22,10 +22,10 @@ Include at the top of your SASS file:
 == Usage
 
 === CSS Layout Reset
-  +Layout_Reset
+  @include Layout_Reset
   
 === Layout Helpers
-  +Layout_Helpers
+  @include Layout_Helpers
   .Clear - Clear fix
   tag.Hidden - Visibility: hidden
   tag.Visible - Visibility: visible
@@ -33,11 +33,11 @@ Include at the top of your SASS file:
 === Style Snippets
 
 Round borders
-  +round-borders("5px")
-  +round-borders("0 10px 10px 0")
+  +round-borders(5px)
+  +round-borders(0 10px 10px 0)
 
 Box Shadow
-  +box-shadow("#000 1px 1px 5px")
+  +box-shadow(#000 1px 1px 5px)
 
 = Copyright
 Copyright (c) 2009 Vlad Alive (http://vladalive.com), released under the MIT license
