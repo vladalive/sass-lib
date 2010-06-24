@@ -39,5 +39,11 @@ Round borders
 Box Shadow
   +box-shadow(#000 1px 1px 5px)
 
+CSS3 Transform
+  +transform(scale(2))
+
+CSS3 Transition
+  +transition(all 0.5s ease)
+
 = Copyright
 Copyright (c) 2009 Vlad Alive (http://vladalive.com), released under the MIT license
