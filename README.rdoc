@@ -12,7 +12,7 @@ Install as git submodule for Rails application with SASS:
   git submodule add git@github.com:vladalive/sass-lib.git public/stylesheets/sass/sass-lib
 
 Include at the top of your SASS file:
-  @import sass-lib/lib.sass
+  @import sass-lib/_lib.sass
   @include Layout_Reset
   @include Layout_Helpers
 
