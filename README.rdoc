@@ -29,6 +29,7 @@ Include at the top of your SASS file:
   .Clear - Clear fix
   tag.Hidden - Visibility: hidden
   tag.Visible - Visibility: visible
+  tag.None - Display: none
 
 === Style Snippets
 
@@ -39,11 +40,26 @@ Round borders
 Box Shadow
   +box-shadow(#000 1px 1px 5px)
 
+Opacity
+  +opacity(0.5)
+
 CSS3 Transform
   +transform(scale(2))
 
 CSS3 Transition
   +transition(all 0.5s ease)
 
+CSS3 change box-sizing model
+  +box-sizing(border-box)
+  +box-sizing-border-box
+
+CSS3 text truncating using ellipsis
+  +ellipsis
+
 = Copyright
-Copyright (c) 2009 Vlad Alive (http://vladalive.com), released under the MIT license
+Copyright (c) 2009-2011 Vlad Alive (http://vladalive.com)
+
+Source code: https://github.com/vladalive/sass-lib
+
+Released under the MIT license
+

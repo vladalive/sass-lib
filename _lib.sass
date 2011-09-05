@@ -103,6 +103,9 @@
   .Visible
     visibility: visible !important
 
+  .None
+    display: none
+
 /* SASS Mixings */
 
 @mixin round-borders($args)
@@ -112,9 +115,9 @@
   border-radius: $args
 
 @mixin box-shadow($args)
-  -moz-box-shadow: $args
-  -webkit-box-shadow: $args
-  box-shadow: $args
+  -moz-box-shadow: unquote($args)
+  -webkit-box-shadow: unquote($args)
+  box-shadow: unquote($args)
 
 @mixin transform($args)
   -moz-transform: $args
@@ -132,4 +135,24 @@
   background: -moz-linear-gradient(top, $from, $to)
   background: -webkit-gradient(linear, left top, left bottom, from($from), to($to))
   background: linear-gradient($from, $to)
+
+@mixin opacity($opacity)
+  filter: alpha(opacity = $opacity*100)
+  -moz-opacity: $opacity
+  -khtml-opacity: $opacity
+  opacity: $opacity
+
+@mixin box-sizing($args)
+  box-sizing: $args
+  -webkit-box-sizing: $args
+  -moz-box-sizing: $args
+
+@mixin box-sizing-border-box
+  +box-sizing(border-box)
+
+@mixin ellipsis
+  overflow: hidden
+  white-space: nowrap
+  text-overflow: ellipsis
+  -o-text-overflow: ellipsis
 
